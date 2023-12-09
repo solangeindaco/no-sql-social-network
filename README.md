@@ -14,8 +14,7 @@ I learn:
 
 ## Installation
 
-Repository URL: https://github.com/solangeindaco/mvc-tech-blog      
-Application URL: https://mvc-exp-tech-blog-08d7621a6b4c.herokuapp.com/
+Repository URL: https://github.com/solangeindaco/no-sql-social-network    
 
 ## Usage
 
