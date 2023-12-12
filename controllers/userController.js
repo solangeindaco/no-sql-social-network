@@ -69,7 +69,7 @@ module.exports = {
     console.log(req.body);
 
     try {
-      const user = await Student.findOneAndUpdate(
+      const user = await User.findOneAndUpdate(
         { _id: req.params.userId },
         { $addToSet: { friends: req.body } },
         { new: true }
