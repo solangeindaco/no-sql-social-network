@@ -1,7 +1,7 @@
 {
-  "name": "28-Stu_Mini-Project",
+  "name": "no-sql-social-network",
   "version": "1.0.1",
-  "description": "Mongoose back-end project - Main",
+  "description": "Mongoose back-end project for a social network.",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -16,5 +16,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.9"
-  }
+  },
+  "keywords": [],
+  "author": ""
 }

@@ -2,7 +2,7 @@ const { Thought } = require('../models');
 
 module.exports = {
   // Get all thoughts
-  async geThoughts(req, res) {
+  async getThoughts(req, res) {
     try {
       const thoughts = await Thought.find();
       res.json(thoughts);
@@ -26,7 +26,7 @@ module.exports = {
     }
   },
   // Create a thought
-  async createthought(req, res) {
+  async createThought(req, res) {
     try {
       const thought = await Thought.create(req.body);
       res.json(thought);
@@ -88,7 +88,7 @@ module.exports = {
   },  
 
   // Delete a reaction
-  async deleteReaction(req, res) {
+  async removeReaction(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(
         { _id: req.params.thoughtId },

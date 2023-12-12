@@ -27,13 +27,13 @@ const userSchema = new Schema(
         ref: 'User',
       },
     ],
+    /**
     virtuals: {
       friendCount: {
-        get: function () {
-          return this.friends.length;
-        },
+        get(){ return this.friends.length; },
       },
     }
+    */
   },
   {
     // Mongoose supports two Schema options to transform Objects after querying MongoDb: toJSON and toObject.
@@ -44,6 +44,11 @@ const userSchema = new Schema(
     id: false,
   }
 );
+
+// get total count of friends on retrieval
+userSchema.virtual('friendCount').get(function() {
+  return this.friends.length;
+});
 
 // Initialize our User model
 const User = model('User', userSchema);
