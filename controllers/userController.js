@@ -65,15 +65,11 @@ module.exports = {
         return res.status(404).json({ message: 'No such user exists' });
       }
 
-      const thoughtsCount = await Thought.deleteMany(
-        { username: user.username }
-      );
+      // Remove user's associated thoughts
+      user.thoughts.forEach(async thoughtId => { await Thought.findOneAndDelete({ _id: thoughtId }) });
 
-      if (!thoughtsCount) {
-        return res.status(404).json({
-          message: 'User deleted, but no thougths found',
-        });
-      }
+      // Remove user from any friends arrays
+      user.friends.forEach(async friendId => { await User.findOneAndUpdate({ friendId }, { $pull: { friends: req.params.userId } }) });
 
       res.json({ message: 'User successfully deleted' });
     } catch (err) {
@@ -84,8 +80,6 @@ module.exports = {
 
   // Add an friend to a user
   async addFriend(req, res) {
-    console.log('You are adding a friend');
-    console.log(req.body);
 
     try {
       const user = await User.findOneAndUpdate(
@@ -109,8 +103,8 @@ module.exports = {
   async removeFriend(req, res) {
     try {
       const user = await User.findOneAndUpdate(
-        { _id: req.params.userId },
-        { $pull: { friends: { friendId: req.params.friendId } } },
+        { friends: req.params.friendId  },
+        { $pull: { friends: req.params.friendId } },
         { new: true }
       );
 
