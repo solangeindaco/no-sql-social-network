@@ -10,7 +10,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Get a thought
+  // Get a thought by ID
   async getSingleThought(req, res) {
     try {
       const thought = await Thought.findOne({ _id: req.params.thoughtId })
@@ -20,7 +20,7 @@ module.exports = {
         return res.status(404).json({ message: 'No thought with that ID' });
       }
 
-      res.json(course);
+      res.json(thought);
     } catch (err) {
       res.status(500).json(err);
     }

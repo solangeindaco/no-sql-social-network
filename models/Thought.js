@@ -4,7 +4,7 @@ const reactionSchema = require('./Reaction');
 // Schema to create a Thought model
 const thoughtSchema = new Schema(
   {
-    thoughText: {
+    thoughtText: {
       type: String,
       required: true,
       minLength: 1,
