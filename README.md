@@ -9,7 +9,7 @@ I build an API for a social network web application where users can share their 
 I learn:  
     - how to use MongoDB database.      
     - Define the structure of the database with a Mongoose schema.    
-    - how to execute CRUD queries using Mongoose..    
+    - how to execute CRUD queries using Mongoose.   
     - how to implement a Mongoose virtual property to create computed properties.         
     - how to use Moment to format a Date.                             
 
