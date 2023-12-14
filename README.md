@@ -4,13 +4,13 @@
 
 ## Description
 
-I create this application from scratch to review the MVC design pattern. I deployed this app on Heroku.
+I build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I did to learn Express.js for routing, a MongoDB database, and the Mongoose ODM.
 I learn:  
-    - how to use express-handlebars package to use Handlebars.js for your Views.      
-    - how to use bcrypt package to hash passwords.    
-    - how to use dotenv package to use environment variables.    
-    - how to use express session and connect-session-sequelize packages to add authentication.          
-    - how to deploy to Heroku with a SQL database.                             
+    - how to use MongoDB database.      
+    - Define the structure of the database with a Mongoose schema.    
+    - how to execute CRUD queries using Mongoose..    
+    - how to implement a Mongoose virtual property to create computed properties.         
+    - how to use Moment to format a Date.                             
 
 ## Installation
 
@@ -20,19 +20,16 @@ Repository URL: https://github.com/solangeindaco/no-sql-social-network
 
 The following video shows the web application's appearance and functionality:
 
-[MVC Tech Bloh video](https://drive.google.com/file/d/1DHZi52j289_CmxeIdmuPE9r78oLjQITe/view)      
+[MVC Tech Bloh video]()      
 
 ## Credits
 
 To create this application, I used the following tutorials:  
+    - MongoDB: https://www.mongodb.com/docs/drivers/node/current/quick-start/   
+    - Mongoose: https://www.npmjs.com/package/mongoose   
     - Express: https://expressjs.com/       
     - Modular Routing: https://expressjs.com/en/guide/routing.html#express-router        
-    - Express handlebars: https://www.npmjs.com/package/express-handlebars   
-    - dotenv: https://www.npmjs.com/package/dotenv  
-    - bcrypt: https://www.npmjs.com/package/bcrypt  
-    - connect-session-sequelize: https://www.npmjs.com/package/connect-session-sequelize        
-    - Heroku: https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true      
-    - Deploy to Heroku with a SQL database: https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql                                                          
+    - Moment: https://momentjs.com/                                                          
 
 ## License
 
