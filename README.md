@@ -4,7 +4,8 @@
 
 ## Description
 
-I build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I did to learn Express.js for routing, a MongoDB database, and the Mongoose ODM.
+I build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I did to learn Express.js (routing), MongoDB database, and the Mongoose ODM.   
+
 I learn:  
     - how to use MongoDB database.      
     - Define the structure of the database with a Mongoose schema.    
@@ -24,7 +25,7 @@ The following video shows the web application's appearance and functionality:
 
 ## Credits
 
-To create this application, I used the following tutorials:  
+To create this application, I used the following tutorials and libraries:  
     - MongoDB: https://www.mongodb.com/docs/drivers/node/current/quick-start/   
     - Mongoose: https://www.npmjs.com/package/mongoose   
     - Express: https://expressjs.com/       
