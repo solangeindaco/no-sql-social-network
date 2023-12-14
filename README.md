@@ -20,7 +20,7 @@ Repository URL: https://github.com/solangeindaco/no-sql-social-network
 
 The following video shows the web application's appearance and functionality:
 
-[MVC Tech Bloh video]()      
+[MVC Tech Bloh video](https://drive.google.com/file/d/1uOx152FCnEVNakYOtjAS6RtcMX6d1P8J/view)      
 
 ## Credits
 
