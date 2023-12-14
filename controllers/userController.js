@@ -71,7 +71,7 @@ module.exports = {
       // Remove user from any friends arrays
       user.friends.forEach(async friendId => { await User.findOneAndUpdate({ friendId }, { $pull: { friends: req.params.userId } }) });
 
-      res.json({ message: 'User successfully deleted' });
+      res.json({ message: 'User and associeted thoughts deleted' });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
